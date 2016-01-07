@@ -21,6 +21,7 @@ end
   node['apache_zookeeper']['log_dir'],
 ].each do |dir|
   directory dir do
+    action :create
     recursive true
     owner node['apache_zookeeper']['user']
     group node['apache_zookeeper']['group']
