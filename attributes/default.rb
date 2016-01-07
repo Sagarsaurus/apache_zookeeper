@@ -26,7 +26,7 @@ local_state_dir = node['apache_zookeeper']['local_state_dir']
 
 default['apache_zookeeper']['config_dir'] = base_dir + '/conf'
 default['apache_zookeeper']['bin_dir'] =    base_dir + '/bin'
-default['apache_zookeeper']['data_dir'] =   local_state_dir + '/data'
+default['apache_zookeeper']['data_dir'] =   '/var/log/zk_data/1'
 default['apache_zookeeper']['log_dir'] =    local_state_dir + '/log'
 
 # This are used to configure a cluster
